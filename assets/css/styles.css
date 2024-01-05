@@ -1,0 +1,19 @@
+
+
+#link {
+    text-decoration: none;
+}
+
+/*
+ul {
+    display: column;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+}
+*/
+
+#skills {
+    text-align: center;
+    list-style-type: none;
+}
