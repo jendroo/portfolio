@@ -31,4 +31,30 @@ if (country == 'usa' && gender != 'female') {
 
 }
 
+function activateSubmit() {
 
+const email = document.registration.email.value
+const firstName = document.registration.first_name.value
+const lastName = document.registration.last_name.value
+const submitBtn = document.getElementById('subact')
+
+if(email.length > 0 && firstName.length > 0 && lastName.length > 0){
+    submitBtn.classList.remove('submit-disabled')
+} else {
+    submitBtn.classList.add('submit-disabled')
+}
+
+}
+
+function countText() {
+    const textareaCnt = document.registration.message.value.length
+    const para = document.getElementById('text-count')
+
+    if (textareaCnt == 100) {
+        para.style.color = 'green'
+        
+    } else {
+        para.style.color = 'red'
+    }
+    para.textContent = textareaCnt + "/100"
+}

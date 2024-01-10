@@ -15,3 +15,7 @@
 ## `transition`
 
 ## `Animation`
+
+# Advanced JavaScript
+
+## Activiate submit button only when required fields are filled
