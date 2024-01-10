@@ -20,7 +20,27 @@
         input[type="text"],
         input[type="email"]{
             margin-top: 20px;
+            transition: background-color 2s;
         }
+
+        textarea{
+            width: 30%;
+            animation-name: text-area;
+            animation-duration: 3s;
+            transition: background-color 2s;
+           
+        }
+
+        @keyframes text-area {
+            from {
+                width: 5%;
+            }
+            to {
+                width: 30%;
+            }
+
+        }
+
         input {
             margin-top: 20px;
             margin-bottom: 10px;
@@ -43,6 +63,41 @@
         #text_message {
             background-color: chocolate;
         }
+
+        input[type='text']:hover,
+        input[type='email']:hover,
+        textarea:hover {
+            background-color: rgb(250, 139, 4);
+        }
+
+        input[type='text']:focus,
+        input[type='email']:focus,
+        textarea:focus {
+            background-color: rgb(201, 10, 73);
+        }
+
+        input[type='submit']:active {
+            font-size: xx-small;
+            
+        }
+
+        input[type='submit'] {
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            background-image: linear-gradient(to right, green, rgb(218, 226, 218));
+            cursor: pointer;
+            transition: font-size 1s, padding 1s;
+        }
+
+        input[type='submit']:hover {
+            padding: 24px 48px;
+            font-size: large;
+        }
+
+        
+
+
     </style>
 </head>
 <body>
@@ -116,6 +171,7 @@
             <textarea
             name="message"
             id="message"
+            rows="8"
             ></textarea><br/>
         
         
